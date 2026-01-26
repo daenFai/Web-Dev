@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p {
+            color: blue;
+        }
+        h1 {
+            color: green;
+        }
+        /* add CSS here */
+
+        .first {
+            width: 100px;
+        }
+        .second {
+            height: 200px;
+        }
+        .third {
+            margin: 1em;
+        }
+        .fourth {
+            font-size: 2em;
+        }
+
+        .kitten-image {
+            border: 5px dashed salmon;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 5px 5px 20px #ccc
+        }
+
+
+        .udacity-text {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 60px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            color :  #8001ff;
+        }
+
+
+        #menu {
+            text-align: center;
+        }
+
+        .item {
+            color: red;
+        }
+
+        .picture {
+            border-radius: 5px;
+        }
+
+        .description {
+            font-style: italic;
+        }
+
+
+        body {
+            font-family: Arial;
+        }
+        #to-do-list {
+            width: 400px;
+            background: #2e3d49;
+            padding: 10px 20px;
+        }
+        .title {
+            color: #fff;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .list {
+            list-style-type: circle;
+            text-align: left;
+            font-size: 16px;
+            color: #1fba58;
+            line-height: 24px;
+        }
+        .finished {
+            color: #f4442f;
+            text-decoration: line-through;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #222;
+        }
+        .card {
+            height: 475px;
+            width: 325px;
+            box-shadow: 0px 5px 15px 0px rgba(153,153,153,0.5);
+            border-radius: 4px;
+        }
+        .top {
+            height: 55%;
+            border-radius: 4px 4px 0px 0px;
+            border: 1px solid #ddd;
+            /* Setting a background image */
+            background-image: url(profile-placeholder.svg);
+            padding: 0px 16px;
+        }
+        .name {
+            padding-top: calc(475px * 0.40);
+            margin: 0px;
+        }
+        .status {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin-left: 4px;
+
+            border-radius: 5px;
+            background-color: #60D156;
+        }
+        .title {
+            margin-top: 8px;
+        }
+        .middle {
+            height: 5%;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            padding: 0px 16px;
+        }
+        .time {
+            color: #444;
+            font-size: 0.8em;
+            padding-top: 0.2em;
+        }
+        .bottom {
+            height: 40%;
+            border-radius: 0px 0px 4px 4px;
+            border: 1px solid #ddd;
+            padding: 8px 16px;
+        }
+        .profile-action {
+            display: block;
+            width: 100%;
+            height: 32px;
+            /* You could also just set the font family explicitly like we did for the body. */
+            font-family: inherit;
+            font-size: 1em;
+            text-align: left;
+            /* The border-radius property allows for round corners. */
+            border-radius: 4px;
+            border: 0px;
+            background-color: white;
+            /* This is how we changed the cursor to be a hand instead of an arrow. */
+            cursor: pointer;
+        }
+        .profile-action:hover {
+            background-color: #00A5D2;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>1</h1>
+    <h2>2</h2>
+    <h3>3</h3>
+    <h4>4</h4>
+    <h5>5</h5>
+    <h6>6</h6>
+    <p>Hi</p>
+    <button>a button!</button>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+
+    <h1>Tree structures</h1>
+    <div>
+        <p>Tree structures allow you to organize your HTML documents into meaningful sections.
+        </p>
+        <p> This is helpful for readability and to provide a consistent structure for styling and programmatic control with CSS and JavaScript.
+        </p>
+    </div>
+    <a href="https://www.google.com">Google</a>
+    <p>
+        <img src="http://udacity.github.io/fend/images/udacity.png" alt="Udacity Logo">
+    </p>
+    <figure>
+        <img src="redwoods_state_park.jpg" alt="Redwoods state park">
+        <figcaption>Stout Memorial Grove in Jedediah Smith Redwoods State Park in 2011 by Chmee2 (Own work) GFDL or CC BY-SA 3.0, via Wikimedia Commons - <a href="https://commons.wikimedia.org/wiki/File%3AStout_Memorial_Grove_in_Jedediah_Smith_Redwoods_State_Park_in_2011_(22).JPG">Source</a>
+        </figcaption>
+    </figure>
+
+
+    <h1>Hottest Jobs in 2016 #2: Web Developer</h1>
+    <p>By <strong><em>Christopher Watkins</em></strong></p>
+    <p>January 19, 2016</p>
+    <img src="http://i1.wp.com/blog.udacity.com/wp-content/uploads/2016/01/Slack-for-iOS-Upload.jpg?zoom=2&amp;resize=320%2C168" alt="Hottest Jobs in 2016 #2: Web Developer">
+    <p>
+        There is a simple reason why Web Developer is such a hot job right now. Put simply, what Web Developers do is create how we experience … the web. If you proceed from the notion that every person who engages with the web would prefer a great experience, then you can say that everyone who engages with the web would prefer that a Web Developer have done a great job. Companies of course know this, so they hire Web Developers to ensure their sites provide great experiences. So, lots of websites and lots of users means lots of demand. LOTS of demand. 🔥
+    </p>
+    <p>This is a <br> paragraph with a line break.</p>
+
+
+    <h1>This is heading 1</h1>
+    <p>This is some text.</p>
+    <hr>
+    <h2>This is heading 2</h2>
+    <p>This is some other text.</p>
+    <hr>
+
+    <pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+    </pre>
+
+
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third">Hammock ex plaid nulla. Nihil stumptown gastropub, dreamcatcher gochujang franzen cillum cliche keffiyeh pop-up pug
+        small batch knausgaard. Fanny pack elit you probably haven't heard of them before they sold out. Sint elit tofu et veniam irony 3 wolf moon.
+        VHS slow-carb trust fund chartreuse wolf. Qui sed dreamcatcher cronut, hoodie fixie normcore. Gochujang dolor consectetur post-ironic.
+    </div>
+    <div class="fourth">Hammock ex plaid nulla. Nihil stumptown gastropub, dreamcatcher gochujang franzen cillum cliche keffiyeh pop-up pug small batch knausgaard.
+        Fanny pack elit you probably haven't heard of them before they sold out. Sint elit tofu et veniam irony 3 wolf moon. VHS slow-carb trust fund chartreuse wolf.
+        Qui sed dreamcatcher cronut, hoodie fixie normcore. Gochujang dolor consectetur post-ironic.
+    </div>
+
+
+    <img src="http://udacity.github.io/fend/lessons/L3/problem-set/02-style-an-image/kitten.jpg" alt="kitten" class="kitten-image">
+
+
+    <h1 class="udacity-text">udacity</h1>
+
+
+    <div id="menu">
+        <h1 class="item">Chicken Clay Pot</h1>
+        <img src="img/clay-pot.jpg" alt="clay pot" class="picture">
+        <p class="description">Crispy rice baked in clay pot topped with chicken and vegetables</p>
+    </div>
+
+
+    <div id="to-do-list">
+        <h1 class="title">My To-Do List</h1>
+        <h2 class="title underline">Chores</h2>
+        <ul class="list">
+            <li>load the diswasher</li>
+            <li>vacuum living room</li>
+            <li>take out garbage</li>
+            <li class="finished">sweep the garage</li>
+        </ul>
+        <h2 class="title underline">Homework</h2>
+        <ul class="list">
+            <li class="finished">brainstorm ideas for Science project</li>
+            <li class="finished">finish Calculus 2 problems</li>
+            <li>study for Programming midterm :P</li>
+            <li>finish Project 0 on Udacity FEND</li>
+            <li class="finished">find sources for Biology research 3 </li>
+            <li>read first two chapters of The Art of War</li>
+        </ul>
+        <h2>Party</h2>
+        <ul class="list">
+            <li>send out invitations</li>
+            <li>reserve party room at restaurant</li>
+            <li>order the cake!</li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="card">
+            <div class="top">
+                <!-- Here we changed the word from 'Stufent' to 'Student' -->
+                <h3 class="name">Udacity Student <span class="status"></span></h3>
+                <p class="title">Learner Extraordinaire</p>
+            </div>
+            <div class="middle">
+                <div class="time">12:34 PM local time</div>
+            </div>
+            <div class="bottom">
+                <button class="profile-action">View preferences</button>
+                <button class="profile-action">Open account settings</button>
+                <button class="profile-action">Edit your profile</button>
+                <button class="profile-action">View your files</button>
+                <button class="profile-action">Set yourself away</button>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+</html>
