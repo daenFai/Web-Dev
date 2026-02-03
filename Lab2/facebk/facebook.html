@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: rgb(244, 244, 244);
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60vh;
+        }
+
+        .container-ver{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            padding-top: 100px;
+        }
+
+        .container-reg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 40vh; */
+            flex-direction: column;
+            /* padding-right: 20px; */
+            gap:20px;
+
+        }
+
+        .main-block {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.791);
+            width:500px;
+            height:310px;
+            text-align:center;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px rgba(200, 200, 200, 0.6);
+            padding:20px;
+            /* position:absolute; */
+            /* margin-left:650px; */
+            /* margin-top:100px; */
+        }
+
+        .button-email {
+            background-color: rgba(248, 248, 248, 0.791);
+            width:200px;
+            height:20px;
+            text-align:center;
+            border-radius: 10px;
+
+            /* margin-left:150px; */
+            padding-top:10px;
+
+            padding-bottom:10px;
+            /* margin-bottom:20px; */
+            /* margin-top: 20px; */
+
+        }
+
+        .button-reg {
+            background-color: rgba(0, 78, 235, 0.791);
+            width:200px;
+            height:20px;
+            text-align:center;
+            border-radius: 5px;
+
+            /* margin-left:150px; */
+            padding-top:10px;
+            color:white;
+            padding-bottom:10px;
+            /* margin-bottom:20px; */
+            /* margin-top: 20px; */
+
+        }
+
+        .button-reg2 {
+            background-color: green;
+            width:200px;
+            height:20px;
+            text-align:center;
+            border-radius: 5px;
+
+            /* margin-left:150px; */
+            padding-top:10px;
+            color:white;
+            padding-bottom:10px;
+            /* margin-bottom:20px; */
+            /* margin-top: 20px; */
+
+        }
+
+        .button-reg:hover {
+            background-color: rgba(0, 63, 152, 0.791);
+            width:200px;
+            height:20px;
+            text-align:center;
+            border-radius: 5px;
+
+            /* margin-left:150px; */
+            padding-top:10px;
+
+            padding-bottom:10px;
+            /* margin-bottom:20px; */
+            /* margin-top: 20px; */
+
+        }
+
+        .button-reg2:hover {
+            background-color: rgba(3, 93, 0, 0.916);
+            width:200px;
+            height:20px;
+            text-align:center;
+            border-radius: 5px;
+
+            /* margin-left:150px; */
+            padding-top:10px;
+
+            padding-bottom:10px;
+            /* margin-bottom:20px; */
+            /* margin-top: 20px; */
+        }
+
+        .logo{
+             position:absolute;
+            /* margin-top:100px; */
+            margin-right:200px;
+            width: 300px;
+            top: 150px;
+        }
+
+        .par{
+            /* position:absolute; */
+            /* margin-top:400px; */
+             margin-right:250px;
+            font-weight: bold;
+            padding-bottom: 100px;
+        }
+
+        .form{
+            width:180px;
+            border-radius: 5px;
+            border-style:solid;
+            padding:10px;
+            text-align: center;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a:visited{
+            color:rgb(119, 119, 119);
+        }
+
+        #frg:hover{
+            color:rgb(15, 58, 118);
+        }
+
+        #frg{
+            color:rgb(0, 13, 135);
+        }
+
+        .no-space{
+            word-spacing:1px;
+            margin-left:5px;
+            margin-right:5px;
+        }
+
+        .footer{
+            width:100%;
+            position:fixed;
+            padding-left:10px;
+            left:0;
+            background-color: rgb(255, 255, 255);
+            height: 25%;
+            bottom:0;
+            color:rgb(116, 115, 115);
+            text-align: center;
+        }
+    </style>
+    <title>
+        Facebook
+    </title>
+</head>
+<body>
+<div class= "container">
+
+    <div class="container-ver">
+        <div class="main-block">
+            <div class="container-reg">
+                <div class="button-email" >
+                    <form>
+                        <input type="text" placeholder="Email or Phone number" class="form">
+                    </form>
+                </div>
+                <div class="button-email">
+                    <form>
+                        <input type="password" placeholder="Password" class="form">
+                    </form>
+                </div>
+                <a href="https://www.w3schools.com/html/html_links.asp">
+                    <div class="button-reg">
+                        Sign in
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzcwMDQxNDY0LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login&next" id="frg">
+                    <p style="border-bottom:1px solid gray;display: block; width: 400px; padding-bottom: 20px">Forgot your password?</p>
+                </a>
+                <a href="https://www.facebook.com/r.php?entry_point=login">
+                    <div class="button-reg2">
+                        Register
+                    </div>
+                </a>
+            </div>
+        </div>
+        <p><span style="font-weight: bold;color:black;">Create page </span>of a celebrity or organization</p>
+        <div class="footer">
+            <p style="border-bottom:1px solid;border-color:rgb(119, 119, 119);padding: 5px; word-spacing: 15px;"> <a href="">Русский</a> <a href=""> Қазақша</a>  <a href=""> English</a> <a href="">Español </a> <a href="">French</a> <a href="">Türkçe</a> <span class="no-space">简化字 </span> <span class="no-space">العَرَبِيَّة </span> <span style="border: 1px solid; background-color: rgb(181, 180, 180);padding:3px;border-radius: 2px;margin-left:10px;">+</span></p>
+            <p style="padding-left: 7px;line-height: 1.5; word-spacing: 15px;">Registration <span class="no-space">Sign in</span> Messenger Facebook Lite People Pages Page Categories Facebook Pay Groups <br>Jobs Oculus Portal Instagram Local Fundraisers Marketplace Services Voting Information Center About Us <br><span class="no-space">Create an Ad </span>Developers <span class="no-space">Create a Page </span>Careers Privacy Cookies Ad Choices Terms of Service Help</p>
+            <p style="padding: 7px;margin-top:2px;">Meta © 2026</p>
+        </div>
+    </div>
+    <div class="container-ver">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" class="logo">
+        <p class="par">Connect with your friends!</p>
+    </div>
+</div>
+</body>
+</html>
