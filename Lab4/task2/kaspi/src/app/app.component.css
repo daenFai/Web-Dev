@@ -1,0 +1,11 @@
+ul{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(142, 220, 220);
+    gap:10px;
+}
+
+li{
+    padding: 4px;
+    margin:4px;
+}

@@ -1,0 +1,22 @@
+<div class="container"><section class="listing" *ngFor="let product of products let i =index">
+  <a href={{product.link}}>
+  <img
+    class="listing-photo"
+    [src]="product.photo"
+    alt="Exterior photo of {{ product.name }}"
+    crossorigin
+  />
+  
+  <h2 class="listing-heading">{{ product.name }}</h2>
+  <p class="listing-location">{{ product.description}}, {{ product.rating }}</p>
+</a>
+<button (click)="shareOnWhatsApp(product.link)">Share on WhatsApp</button>
+<button (click)="shareOnTelegram(product.link)">Share on Telegram</button>
+
+    <p>Likes: {{ product.likes }}</p>
+    <button (click)="likeProduct(product.id)">Like ❤️</button>
+
+  
+    <button (click)="removeProduct(product.id)">Remove ❌</button>
+</section>
+</div>

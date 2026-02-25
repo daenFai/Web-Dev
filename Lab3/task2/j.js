@@ -30,6 +30,7 @@ function addTodoItem(text) {
 
     checkbox.addEventListener('change', function () {
         span.classList.toggle('done');
+
     });
 
     const deleteButton = document.createElement('button');

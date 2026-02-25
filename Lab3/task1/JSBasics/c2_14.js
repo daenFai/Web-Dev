@@ -27,3 +27,6 @@ switch (number) {
         break;
 }
 
+
+let user = new Object(); // синтаксис "конструктор объекта"
+let user = {};  // синтаксис "литерал объекта"
