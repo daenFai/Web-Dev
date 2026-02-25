@@ -12,10 +12,10 @@ import { AppRoutingModule } from './app.routes';
   template:`
     <main>
       <header class="brand-name">
-        
+
       </header>
     <ul>
-    
+
   <li><a routerLink="/category/Computers">Computers</a></li>
   <li><a routerLink="/category/Phones">Phones</a></li>
   <li><a routerLink="/category/TVs">TVs</a></li>
@@ -23,14 +23,14 @@ import { AppRoutingModule } from './app.routes';
   </ul>
       <section class="content">
 
- 
+
         <router-outlet></router-outlet>
       </section>
     </main>`,
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'kaspi';
+  title = 'online_store';
 
 
 }
