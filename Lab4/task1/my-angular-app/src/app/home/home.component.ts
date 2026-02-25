@@ -5,7 +5,7 @@ import {HousingLocation} from '../housinglocation';
   selector: 'app-home',
   standalone: true, // Add this if you're using standalone components
   imports: [HousingLocationComponent], // If no imports are needed, it's fine to leave empty
-  template: `   
+  template: `
     <section>
       <form>
         <input type="text" placeholder="Filter by city" />
@@ -13,12 +13,14 @@ import {HousingLocation} from '../housinglocation';
       </form>
     </section>
       <section class="results">
-      <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
+      <app-housing-location
+        *ngFor="let location of housingLocationList"
+        [housingLocation]="location"></app-housing-location>
     </section>
     `,
   styleUrls: ['./home.component.css'] // Corrected to 'styleUrls'
 })
-export class HomeComponent { 
+export class HomeComponent {
   readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
   housingLocationList: HousingLocation[] = [
     {
